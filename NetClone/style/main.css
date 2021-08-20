@@ -1,0 +1,192 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+
+body {
+  background-color: var(--preto);
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 30px;
+  border: 5px solid var(--vermelho);
+
+  margin: 10px;
+  padding: 0px 30px 5px 30px;
+}
+
+/* Dropdown */
+.dropbtn {
+  background: var(--preto);
+  border: solid 2px var(--vermelho);
+  border-radius: 5%;
+
+  color: var(--vermelho);
+  padding: 16px 20px;
+  font-size: 16px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%);
+  min-width: 98px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5%;
+
+}
+
+.dropdown-content a {
+  color: var(--vermelho);
+  padding: 12px 20px ;
+  text-decoration: none;
+  display: block;
+  border-radius: 2%;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: red; color: var(--preto);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%);}
+
+
+/* Filme Principal */
+
+h2{
+  font-size: 20px;
+  text-align: center;
+  color: #aaa;
+  padding: 5px 0px 15px 0;
+}
+
+.filme-principal {
+  font-size: 16px;
+  height: 400px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/resources/breaking_back.jpg");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.filme-principal .descricao {
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.filme-principal .titulo {
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  margin-top: 12%;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  width: 250px;
+
+  cursor: pointer;
+}
+
+.botao:hover{
+  background-color: white;
+  color: black;
+  transition: .3s ease all;
+}
+
+.botao i{
+  margin-right: 8px;
+}
+
+.container{
+  margin: 0 30px 0 30px;
+}
+
+.filme-principal .container{
+  width: 65%;
+}
+
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.box-series{
+  height: 100%;
+  width: 100px;
+  display: inline-block;
+}
+
+.carrousel-edit{
+  margin: 5px 0px;
+  padding: 10px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 80%)
+}
+
+.container-footer{
+  display: flex;
+  justify-content: center;
+  height: 35px;
+}
+.icons-footer{
+  font-size: 20px;
+  margin: 0 2px;
+  color: #aaa;
+}
+.icons-footer:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.cont{
+  font-size: 20px;
+  color: #aaa;
+  text-align: center;
+  margin: 5px;
+  padding-top: 5px;
+}
