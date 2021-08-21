@@ -82,10 +82,14 @@ header .logo {
 /* Filme Principal */
 
 h2{
-  font-size: 20px;
-  text-align: center;
+  font-size: 30px;
+  text-align: left;
   color: #aaa;
   padding: 5px 0px 15px 0;
+}
+.fav{
+  font-size: 20px;
+  
 }
 
 .filme-principal {
@@ -162,7 +166,7 @@ h2{
 }
 
 .carrousel-edit{
-  margin: 5px 0px;
+  margin: 25px 0px;
   padding: 10px;
   cursor: pointer;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 80%)
@@ -171,11 +175,11 @@ h2{
 .container-footer{
   display: flex;
   justify-content: center;
-  height: 35px;
+  height:50px;
 }
 .icons-footer{
-  font-size: 20px;
-  margin: 0 2px;
+  font-size:30px;
+  margin: 0 5px;
   color: #aaa;
 }
 .icons-footer:hover{
@@ -184,7 +188,7 @@ h2{
 }
 
 .cont{
-  font-size: 20px;
+  font-size: 30px;
   color: #aaa;
   text-align: center;
   margin: 5px;
